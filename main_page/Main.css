@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  background-color: rgb(35, 35, 35) !important ;
+  height: 300vh;
+}
+
+.navbar_container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-bottom: 2px solid gold;
+}
+
+.left-nav_items {
+  margin-left: 50px;
+  font-size: small;
+}
+
+.left-nav_items ul li {
+  margin-top: 20px;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+}
+
+.left-nav_items ul li:hover {
+  color: gold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sub_menu1 {
+  display: none;
+}
+
+.sub_menu1 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub_menu2 {
+  display: none;
+}
+
+.sub_menu2 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub_menu3 {
+  display: none;
+}
+
+.sub_menu3 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub_menu4 {
+  display: none;
+}
+
+.sub_menu4 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-nav_items ul li:hover .sub_menu1 {
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 3px solid rgb(35, 35, 35);
+  height: 350px;
+  padding: 0 20px;
+}
+
+.left-nav_items ul li:hover .sub_menu2 {
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 3px solid rgb(35, 35, 35);
+  height: 350px;
+  padding: 0 5px;
+}
+
+.left-nav_items ul li:hover .sub_menu3 {
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 3px solid rgb(35, 35, 35);
+  height: 350px;
+  padding: 0 5px;
+}
+
+.left-nav_items ul li:hover .sub_menu4 {
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 3px solid rgb(35, 35, 35);
+  height: 350px;
+  padding: 0 5px;
+}
+
+.right-nav_items {
+  margin-right: 50px;
+  color: gold;
+}
+
+.right-nav_items h1 {
+  letter-spacing: 3px;
+  margin: auto 0;
+  background-color: transparent;
+}
+
+.right-nav_items h1:hover {
+  text-shadow: 5px 10px 10px gold;
+}
+
+.featured_movie {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+}
+
+.poster_left {
+  width: 30%;
+  height: 50vh;
+  background-color: black;
+  color: white;
+}
+
+.poster_left h1 {
+  font-size: small;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.poster_left h1:hover {
+  color: gold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.poster_left img {
+  margin: 20px 150px;
+  object-fit: cover;
+  height: 350px;
+  width: 250px;
+  box-shadow: 5px 5px 20px white;
+}
+
+.poster_left img:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 20px gold;
+}
+
+.description-right_container {
+  width: 70%;
+  height: 50vh;
+  display: flex;
+  background-image: url("/all_assets/terminator_gif.gif");
+  background-position: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.description {
+  margin: auto 0;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.description span {
+  color: gold;
+}
+
+.input_container {
+  padding: 10px;
+  width: max-content;
+  display: flex;
+  gap: 5px;
+}
+
+.input_container input {
+  width: 400px;
+  height: 30px;
+  border: 2px solid gold;
+}
+
+.input_container input::placeholder {
+  font-size: 10px;
+  color: black;
+  text-align: center;
+}
+
+.search_button {
+  width: 30px;
+  border: 2px solid gold;
+  background-color: black;
+  cursor: pointer;
+}
+
+.search_button i {
+  color: gold;
+}
+
+.prevBtn {
+  position: absolute;
+  left: 25px;
+  top: 275px;
+  color: white;
+}
+
+.nextBtn {
+  position: absolute;
+  right: 25px;
+  top: 275px;
+  color: white;
+}
+
+.nextBtn:hover,
+.prevBtn:hover {
+  cursor: pointer;
+  color: gold;
+}
+
+.middlebar {
+  height: 40px;
+  width: 100%;
+  background-color: gold;
+  border-bottom: 3px solid black;
+}
+
+.icons_left {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.house_icon {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.house_icon p {
+  color: black;
+}
+
+.house_icon i {
+  margin-right: 20px;
+  margin-top: 2px;
+  margin: 2px 20px 0 0;
+  color: rgba(0, 0, 0, 0.337);
+}
+
+.house_icon .sharing:hover {
+  cursor: pointer;
+}
+
+.movie_container {
+  background-color: black;
+  box-shadow: 5px 5px 20px gold;
+  width: 500px;
+  height: 750px;
+  display: inline-grid;
+  margin: 50px 0 0 100px;
+}
+
+.movie_title {
+  font-size: xx-small;
+  background-color: gold;
+  text-align: center;
+  padding: 5px;
+}
+
+.movie_title h1 {
+  font-size: 30px;
+}
+
+.movie_description_container {
+  display: flex;
+  width: inherit;
+  height: inherit;
+  margin-top: 10px;
+}
+
+.movie_description_container img {
+  width: 225px;
+  height: 300px;
+  object-fit: cover;
+  margin: 5px 0 0 20px;
+}
+
+.movie_plot {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  position: relative;
+  bottom: 400px;
+  color: gold;
+}
+
+.movie_description {
+  margin: 10px 30px;
+}
+
+span {
+  text-decoration: underline;
+  color: gold;
+}
+p {
+  color: white;
+  word-wrap: break-word;
+}
+
+.movie_plot p {
+  font-size: 12px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.movie_plot span {
+  margin-left: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
+
+.buttons button {
+  padding: 10px;
+  border: solid 5px rgb(52, 52, 52);
+  background-color: gold;
+}
+
+.buttons button:hover {
+  background-color: black;
+  border: 5px solid yellow;
+  color: white;
+}
+
+.watchMovie {
+  display: none;
+}
+
+#watch_movie:hover .watchMovie {
+  width: 450px;
+  height: 250px;
+  position: absolute;
+  display: flex;
+}
+
+.watchMovie img {
+  opacity: 75%;
+}
+
+.playBtn {
+  position: absolute;
+  top: 100px;
+  left: 25px;
+  color: white;
+}
+
+.playBtn:hover {
+  color: gold;
+  cursor: pointer;
+}
+
+.sharing {
+  color: white;
+}
+
+.sharing_media {
+  display: none;
+}
+
+.sharing:hover .sharing_media {
+  position: absolute;
+  width: max-content;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.66);
+  border: 3px solid rgb(35, 35, 35);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  gap: 5px;
+}
+
+.sharing_media a img {
+  width: 50px;
+  height: 50px;
+}
+
+.sharing a img:hover {
+  transform: scale(1.2);
+  opacity: 75%;
+}
+/* .sharing_media .facebook {
+  color: #3b5898;
+}
+
+.sharing_media .facebook:hover {
+  color: #3b589881;
+}
+
+.sharing_media .twitter {
+  color: rgb(29, 160, 242);
+}
+
+.sharing_media .twitter:hover {
+  color: rgba(29, 160, 242, 0.492);
+}
+
+.sharing_media .instagram {
+  color: #8a3ab9;
+}
+
+.sharing_media .instagram:hover {
+  color: #8a3ab978;
+} */
+
+.search_movies_container {
+  top: 50px;
+  border: 4px solid gold;
+  position: absolute;
+  width: 400px;
+  height: 900px;
+  padding: 5px;
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.817);
+}
+
+.search_movie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid gold;
+  margin-top: 5px;
+}
+
+.left_search_movies {
+  width: 60px;
+  height: 75px;
+}
+
+.left_search_movies img {
+  margin: 2.5px 0 5px 5px;
+  width: 50px;
+  height: 70px;
+}
+
+.right_search_title {
+  width: calc(400px - 60px);
+  height: 70px;
+}
+
+.right_search_title h1 {
+  margin: 10px;
+  font-size: medium;
+}
+
+.right_search_title p {
+  margin: 10px;
+  font-size: small;
+}
+
+/* breedte scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* lengte met kleuren */
+::-webkit-scrollbar-track {
+  background: black;
+  border: 2px solid rgba(255, 217, 0, 0.5);
+}
+
+/* balk kleur zonder hover effect */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 217, 0, 0.5);
+}
+
+/* balk kleur met hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: gold;
+}
